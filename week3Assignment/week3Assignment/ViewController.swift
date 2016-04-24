@@ -10,16 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  
+  @IBOutlet weak var swipeView: UITextView!
+  
+  let swipeRec = UISwipeGestureRecognizer()
+ 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+   
+    swipeRec.addTarget(self, action: #selector(ViewController.swipedView))
+    swipeView.addGestureRecognizer(swipeRec)
+    swipeView.userInteractionEnabled = true
+    
+  
   }
+  
+  
+  func swipedView(){
+    performSegueWithIdentifier("anotherViewSegue", sender: self)
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
-
-
+  
+  
+  
+  
 }
 
