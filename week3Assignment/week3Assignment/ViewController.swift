@@ -14,15 +14,16 @@ class ViewController: UIViewController {
   @IBOutlet weak var swipeView: UITextView!
   
   let swipeRec = UISwipeGestureRecognizer()
- 
+  //let swipeRight = UISwipeGestureRecognizer()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
    
     swipeRec.addTarget(self, action: #selector(ViewController.swipedView))
     swipeView.addGestureRecognizer(swipeRec)
+//    swipeRec.direction = .Left
     swipeView.userInteractionEnabled = true
     
-  
   }
   
   
@@ -31,7 +32,11 @@ class ViewController: UIViewController {
 
   }
   
+  @IBAction func displayTableView(sender: AnyObject) {
   
+    performSegueWithIdentifier("tableViewSegue", sender: self)
+  
+  }
   
   
 }

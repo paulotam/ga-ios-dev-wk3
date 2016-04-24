@@ -10,16 +10,12 @@ import UIKit
 
 class subViewController: UIViewController {
   
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    print("HELLO")
-    
+//    print("HELLO")
     
   }
-  
-  
   
   @IBAction func dismissButton(sender: AnyObject) {
     dismissViewControllerAnimated(true, completion: nil)
