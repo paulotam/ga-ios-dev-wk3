@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
   
-  @IBOutlet weak var swipeView: UIButton!
+  @IBOutlet weak var swipeView: UITextView!
   
   let swipeRec = UISwipeGestureRecognizer()
  
