@@ -1,5 +1,5 @@
 //
-//  subViewController.swift
+//  secondController.swift
 //  week3Assignment
 //
 //  Created by Paulo Tam on 24/04/2016.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class subViewController: UIViewController {
+class SecondController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()

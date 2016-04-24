@@ -16,9 +16,10 @@
 		1C8174E71CC7AC02002621D4 /* week3AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8174E61CC7AC02002621D4 /* week3AssignmentUITests.swift */; };
 		1CD367581CCC95CE00412947 /* general_assembly.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CD367571CCC95CE00412947 /* general_assembly.png */; };
 		1CD3675A1CCC96BD00412947 /* melbourne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1CD367591CCC96BD00412947 /* melbourne.jpg */; };
-		1CD3675C1CCC9C2700412947 /* subViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3675B1CCC9C2700412947 /* subViewController.swift */; };
-		1CD367601CCCBBBD00412947 /* animalListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3675F1CCCBBBD00412947 /* animalListDelegate.swift */; };
-		1CD367621CCCBFCE00412947 /* animalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD367611CCCBFCE00412947 /* animalsTableViewController.swift */; };
+		1CD3675C1CCC9C2700412947 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3675B1CCC9C2700412947 /* SecondController.swift */; };
+		1CD367601CCCBBBD00412947 /* AnimalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3675F1CCCBBBD00412947 /* AnimalDelegate.swift */; };
+		1CD367621CCCBFCE00412947 /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD367611CCCBFCE00412947 /* AnimalsViewController.swift */; };
+		1CD3679F1CCCD87000412947 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3679E1CCCD87000412947 /* Animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +55,10 @@
 		1C8174E81CC7AC02002621D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CD367571CCC95CE00412947 /* general_assembly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = general_assembly.png; sourceTree = "<group>"; };
 		1CD367591CCC96BD00412947 /* melbourne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = melbourne.jpg; sourceTree = "<group>"; };
-		1CD3675B1CCC9C2700412947 /* subViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subViewController.swift; sourceTree = "<group>"; };
-		1CD3675F1CCCBBBD00412947 /* animalListDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animalListDelegate.swift; sourceTree = "<group>"; };
-		1CD367611CCCBFCE00412947 /* animalsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animalsTableViewController.swift; sourceTree = "<group>"; };
+		1CD3675B1CCC9C2700412947 /* SecondController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
+		1CD3675F1CCCBBBD00412947 /* AnimalDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalDelegate.swift; sourceTree = "<group>"; };
+		1CD367611CCCBFCE00412947 /* AnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
+		1CD3679E1CCCD87000412947 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,16 +109,17 @@
 		1C8174C51CC7AC02002621D4 /* week3Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				1CD3675F1CCCBBBD00412947 /* AnimalDelegate.swift */,
+				1CD367611CCCBFCE00412947 /* AnimalsViewController.swift */,
+				1CD3679E1CCCD87000412947 /* Animal.swift */,
 				1C8174C61CC7AC02002621D4 /* AppDelegate.swift */,
-				1CD3675B1CCC9C2700412947 /* subViewController.swift */,
+				1CD3675B1CCC9C2700412947 /* SecondController.swift */,
 				1C8174C81CC7AC02002621D4 /* ViewController.swift */,
 				1C8174CA1CC7AC02002621D4 /* Main.storyboard */,
 				1C8174CD1CC7AC02002621D4 /* Assets.xcassets */,
 				1CD367561CCC95C200412947 /* Assets */,
 				1C8174CF1CC7AC02002621D4 /* LaunchScreen.storyboard */,
 				1C8174D21CC7AC02002621D4 /* Info.plist */,
-				1CD3675F1CCCBBBD00412947 /* animalListDelegate.swift */,
-				1CD367611CCCBFCE00412947 /* animalsTableViewController.swift */,
 			);
 			path = week3Assignment;
 			sourceTree = "<group>";
@@ -282,10 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C8174C91CC7AC02002621D4 /* ViewController.swift in Sources */,
-				1CD3675C1CCC9C2700412947 /* subViewController.swift in Sources */,
+				1CD3675C1CCC9C2700412947 /* SecondController.swift in Sources */,
 				1C8174C71CC7AC02002621D4 /* AppDelegate.swift in Sources */,
-				1CD367621CCCBFCE00412947 /* animalsTableViewController.swift in Sources */,
-				1CD367601CCCBBBD00412947 /* animalListDelegate.swift in Sources */,
+				1CD367621CCCBFCE00412947 /* AnimalsViewController.swift in Sources */,
+				1CD367601CCCBBBD00412947 /* AnimalDelegate.swift in Sources */,
+				1CD3679F1CCCD87000412947 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

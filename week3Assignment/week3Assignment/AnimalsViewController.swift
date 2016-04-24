@@ -8,16 +8,16 @@
 
 import UIKit
 
-class animalsTableViewController: UITableViewController {
+class AnimalsViewController: UITableViewController {
 
   @IBOutlet var animalTable: UITableView!
 
-    let delegate = animalListDelegate()
+    let delegate = AnimalDelegate()
   
     override func viewDidLoad() {
       super.viewDidLoad()
 
-//      animalTable.delegate = delegate
+      animalTable.delegate = delegate
       animalTable.dataSource = delegate
       
         // Uncomment the following line to preserve selection between presentations

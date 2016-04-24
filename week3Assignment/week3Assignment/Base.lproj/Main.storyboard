@@ -37,19 +37,19 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="swipeView" destination="Bc1-lb-ohA" id="PCt-gs-ubK"/>
-                        <segue destination="oKW-Rb-PAb" kind="show" identifier="anotherViewSegue" id="i9K-bU-LS7"/>
-                        <segue destination="1MM-LW-rR6" kind="show" identifier="tableViewSegue" id="s4y-ov-0IO"/>
+                        <segue destination="oKW-Rb-PAb" kind="presentation" identifier="anotherViewSegue" id="i9K-bU-LS7"/>
+                        <segue destination="1MM-LW-rR6" kind="presentation" identifier="tableViewSegue" id="s4y-ov-0IO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="W4S-y8-y4f"/>
             </objects>
-            <point key="canvasLocation" x="-58.5" y="324.5"/>
+            <point key="canvasLocation" x="-220.5" y="288.5"/>
         </scene>
-        <!--arrayTableViewController-->
+        <!--Animals View Controller-->
         <scene sceneID="4Mk-iP-dgQ">
             <objects>
-                <tableViewController title="arrayTableViewController" id="1MM-LW-rR6" customClass="animalsTableViewController" customModule="week3Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="1MM-LW-rR6" customClass="AnimalsViewController" customModule="week3Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JHX-Yb-zoN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="452.5" y="728.5"/>
         </scene>
-        <!--Sub View Controller-->
+        <!--Second Controller-->
         <scene sceneID="QCG-LS-Fxz">
             <objects>
-                <viewController storyboardIdentifier="anotherViewSegue" id="oKW-Rb-PAb" customClass="subViewController" customModule="week3Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="anotherViewSegue" id="oKW-Rb-PAb" customClass="SecondController" customModule="week3Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wum-n7-JD8"/>
                         <viewControllerLayoutGuide type="bottom" id="rFi-13-wDo"/>
