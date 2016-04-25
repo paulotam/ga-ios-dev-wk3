@@ -14,6 +14,7 @@
 		1C8174D11CC7AC02002621D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C8174CF1CC7AC02002621D4 /* LaunchScreen.storyboard */; };
 		1C8174DC1CC7AC02002621D4 /* week3AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8174DB1CC7AC02002621D4 /* week3AssignmentTests.swift */; };
 		1C8174E71CC7AC02002621D4 /* week3AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8174E61CC7AC02002621D4 /* week3AssignmentUITests.swift */; };
+		1CC002211CCD843A00A35797 /* Dragon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC002201CCD843A00A35797 /* Dragon.swift */; };
 		1CD367581CCC95CE00412947 /* general_assembly.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CD367571CCC95CE00412947 /* general_assembly.png */; };
 		1CD3675A1CCC96BD00412947 /* melbourne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1CD367591CCC96BD00412947 /* melbourne.jpg */; };
 		1CD3675C1CCC9C2700412947 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3675B1CCC9C2700412947 /* SecondController.swift */; };
@@ -53,6 +54,7 @@
 		1C8174E21CC7AC02002621D4 /* week3AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = week3AssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8174E61CC7AC02002621D4 /* week3AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = week3AssignmentUITests.swift; sourceTree = "<group>"; };
 		1C8174E81CC7AC02002621D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC002201CCD843A00A35797 /* Dragon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dragon.swift; sourceTree = "<group>"; };
 		1CD367571CCC95CE00412947 /* general_assembly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = general_assembly.png; sourceTree = "<group>"; };
 		1CD367591CCC96BD00412947 /* melbourne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = melbourne.jpg; sourceTree = "<group>"; };
 		1CD3675B1CCC9C2700412947 /* SecondController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				1CD367611CCCBFCE00412947 /* AnimalsViewController.swift */,
 				1CD3679E1CCCD87000412947 /* Animal.swift */,
 				1C8174C61CC7AC02002621D4 /* AppDelegate.swift */,
+				1CC002201CCD843A00A35797 /* Dragon.swift */,
 				1CD3675B1CCC9C2700412947 /* SecondController.swift */,
 				1C8174C81CC7AC02002621D4 /* ViewController.swift */,
 				1C8174CA1CC7AC02002621D4 /* Main.storyboard */,
@@ -219,6 +222,7 @@
 				TargetAttributes = {
 					1C8174C21CC7AC02002621D4 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3HFFUKQHNS;
 					};
 					1C8174D61CC7AC02002621D4 = {
 						CreatedOnToolsVersion = 7.3;
@@ -285,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C8174C91CC7AC02002621D4 /* ViewController.swift in Sources */,
+				1CC002211CCD843A00A35797 /* Dragon.swift in Sources */,
 				1CD3675C1CCC9C2700412947 /* SecondController.swift in Sources */,
 				1C8174C71CC7AC02002621D4 /* AppDelegate.swift in Sources */,
 				1CD367621CCCBFCE00412947 /* AnimalsViewController.swift in Sources */,
@@ -433,10 +438,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = week3Assignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.paulo.week3Assignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -444,10 +452,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = week3Assignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.paulo.week3Assignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -6,8 +6,18 @@
 //  Copyright © 2016 Paulo Tam. All rights reserved.
 //
 
-struct Animal {
-  var name: String
-  var specie: String
+class Animal {
+  var name: String = ""
+  var specie: String = ""
   
+  init (name: String,
+        specie: String) {
+    self.name = name
+    self.specie = specie
+  }
+  
+  func prettyAnimalName() -> String {
+    return "\(name) the \(specie)"
+  }
+
 }

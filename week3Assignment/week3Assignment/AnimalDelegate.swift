@@ -8,22 +8,25 @@
 
 import UIKit
 
-
 class AnimalDelegate: NSObject, UITableViewDataSource, UITableViewDelegate {
 
-  //var dataSourceArray = ["Dog", "Cat", "Lion"]
+  var animalArray = [Animal]()
+
+  override init() {
+    animalArray.append(Animal(name: "Paulo", specie: "Panther"))
+    animalArray.append(Animal(name: "Charlie", specie: "Cat"))
+    animalArray.append(Animal(name: "Bruce", specie: "Bird"))
+    animalArray.append(Animal(name: "Lucy", specie: "Leopard"))
+    animalArray.append(Dragon(name: "Derek"))
+  }
   
-  var animal: [Animal] = [Animal(name:"", specie: "")]
-  
-  let dog = Animal(name:"", specie: "")
-  animal.append(dog)
   
 //  func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 //    return 1 // This was put in mainly for my own unit testing
 //  }
 
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return animal.count // Most of the time my data source is an array of something...  will replace with the actual name of the data source
+    return animalArray.count // Most of the time my data source is an array of something...  will replace with the actual name of the data source
   }
 
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -32,7 +35,7 @@ class AnimalDelegate: NSObject, UITableViewDataSource, UITableViewDelegate {
   
   // set cell's textLabel.text property
     let row = indexPath.row
-    cell.textLabel?.text = animal[row].name
+    cell.textLabel?.text = animalArray[row].prettyAnimalName()
     
   // set cell's detailTextLabel.text property
     return cell
